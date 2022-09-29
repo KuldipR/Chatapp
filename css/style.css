@@ -1,0 +1,74 @@
+
+body{
+    background-color: rgb(205, 228, 228);
+}
+
+#icon{
+    display: block;
+    margin: auto;
+    
+}
+
+
+
+.container {
+    max-width: 1500px;
+   
+    margin: auto;
+    height: 60vh;
+   /* border: 5px solid rgb(130, 163, 228); */
+   /* overflow-y: auto;
+     */
+   
+}
+
+ .message{
+    background-color: rgb(240, 172, 231);
+    padding: 12px;
+    margin: 8px 6px;
+    border: 5px solid rgb(130, 163, 228);
+  
+
+}
+
+
+#left{
+    border-radius: 6px;
+    width: 40%;
+    display: flex;
+     float: left;
+    clear: both;
+    height: 10px;
+    align-items: center;
+}
+
+#right{
+    border-radius: 6px;
+    width: 40%;
+    height: 10px;
+    display: flex;
+    float: right;
+    clear: both;
+    align-items: center;
+}
+
+.send{
+    display: block;
+    margin: auto;
+    text-align: center;
+   
+}
+#in{
+    width: 78%;
+    border: 4px solid rgb(130, 163, 228);
+    height: 30px;
+    border-radius: 6px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid rgb(238, 220, 220);
+    border-radius: 6px;
+    height: 40px;
+}  
+
+

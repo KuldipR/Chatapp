@@ -1,52 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Realtime ChatApp</title>
-    
+
     <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
 
-    <script defer src="js/client.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 <body>
-    <nav>
-        <img src="/download.png" alt="chatimmage" id="icon">
+<div class="bg">
+<nav class="nav">
+      <h1>Chat Application built using Node JS</h1>
     </nav>
-    <div class="container">
-
-        <!-- <div class="message" id="left">
-
-        </div>
-        <div class="message" id="right"> -->
-
-        </div>
-
-
+    <div class = "nav"><img src="/download.png" alt="chatimmage" id="icon" /></div>
+<div class="container" >
     </div>
-    <div class="container">
-        <form action="#" id="send">
-            <input type="text" name="input" id="in">
-            <button class="btn" type="submit">Send</button>
-
+    <div class=" formdiv">
+        <form action="#" id="send" >
+          <input type="text" name="input" id="in" />
+          <button class="btn" type="submit">Send</button>
         </form>
-    </div>
+        </div>
+</div>
 
-
-
-
-
-
-
-
-
-   
-</body>
-
-</html> 
-
-
+    </script>
+    <script defer src="js/client.js"></script>
+  </body>
+</html>

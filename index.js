@@ -1,5 +1,19 @@
 // Node server which will handle socket io connections
+const express = require('express');
+const http = require('http');
+const path = require('path');
+
+
+const app = express();
+const server = http.createServer(app);
 const io = require('socket.io')(8000)
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Serve index.html on the root route
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 const users = {};
 
@@ -23,3 +37,8 @@ io.on('connection', socket =>{
 
 
 })
+
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});

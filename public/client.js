@@ -2,7 +2,7 @@
 
 const socket = io(`http://localhost:8000`);
 
-
+console.log("Js in running")
 
 const form = document.getElementById('send');
 const messageInput = document.getElementById(`in`);

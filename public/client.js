@@ -1,4 +1,4 @@
-const socket = io(`ws://localhost:3000`);
+const socket = io();
 const form = document.getElementById("send");
 const messageInput = document.getElementById(`in`);
 const messageContainer = document.querySelector(`.container`);

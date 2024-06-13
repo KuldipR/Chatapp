@@ -1,6 +1,6 @@
 
 
-const socket = io(`http://localhost:8000`);
+const socket = io(`ws://localhost:3000`);
 
 console.log("Js in running")
 
